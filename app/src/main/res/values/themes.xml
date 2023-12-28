@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Raoulhakim_suitmedi4a" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <item name="actionBarTheme">@style/Widget.AppCompat.Light.ActionBar</item>
+        <item name="actionBarStyle">@style/Theme.MaterialComponents.Light.DarkActionBar</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="colorPrimary">@color/primaryBlue</item>
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Raoulhakim_suitmedi4a" parent="Base.Theme.Raoulhakim_suitmedi4a" />
+</resources>

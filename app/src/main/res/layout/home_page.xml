@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".HomepageActivity">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtWelcome"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcome" />
+
+    <Button
+        android:id="@+id/btnChoose"
+        android:background="@drawable/custom_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose a User"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSelectUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected User Name"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnChoose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUser" />
+</androidx.constraintlayout.widget.ConstraintLayout>
